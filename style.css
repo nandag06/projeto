@@ -1,148 +1,99 @@
-/* ======== GERAL ======== */
+/* Resetando margens e padding para todos os elementos */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+/* Corpo da página */
 body {
-  font-family: "Poppins", Arial, sans-serif;
-  background-color: #f6f4ef;
-  color: #3b3b3b;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* ======== TOPO ======== */
-.topo {
-  background-color: #e2c9a6;
-  color: #2a2a2a;
-  text-align: center;
-  padding: 20px;
-}
-
-.topo h1 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
+/* Menu de navegação */
+.menu {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
 }
 
 .menu a {
-  color: #2a2a2a;
-  text-decoration: none;
-  margin: 0 12px;
-  font-weight: 500;
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
 }
 
 .menu a:hover {
-  border-bottom: 2px solid #2a2a2a;
+    text-decoration: underline;
 }
 
-/* ======== BANNER ======== */
-.banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-              url("imagens/banner.jpg") center/cover no-repeat;
-  color: white;
-  text-align: center;
-  padding: 100px 20px;
+/* Conteúdo das páginas */
+.conteudo {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.texto-banner h2 {
-  font-size: 2.2em;
-  margin-bottom: 15px;
-  font-weight: 600;
+.conteudo h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
 }
 
-.texto-banner p {
-  font-size: 1.1em;
+.conteudo h2 {
+    font-size: 1.8em;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
-/* ======== SEÇÕES ======== */
-.sessao {
-  padding: 60px 20px;
-  text-align: center;
-  max-width: 900px;
-  margin: auto;
+.conteudo p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-.sessao h2 {
-  margin-bottom: 20px;
-  color: #2e2e2e;
-  font-size: 1.7em;
+.conteudo ul {
+    list-style-type: square;
+    margin-left: 20px;
 }
 
-.sessao p {
-  font-size: 1.1em;
-  margin-bottom: 20px;
+.conteudo ul li {
+    margin-bottom: 10px;
 }
 
-/* ======== CARDS ======== */
-.cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+.imagem-principal {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
 }
 
-.card {
-  background-color: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  width: 260px;
-  transition: transform 0.3s;
+form label {
+    display: block;
+    margin: 10px 0 5px;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-/* ======== FORMULÁRIO ======== */
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-input, textarea {
-  width: 80%;
-  max-width: 400px;
-  padding: 10px;
-  border: 1px solid #aaa;
-  border-radius: 5px;
-  background-color: #fff;
-}
-
-button {
-  background-color: #b98b59;
-  color: white;
-  border: none;
-  padding: 10px 25px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background-color: #9e744a;
-}
-
-/* ======== RODAPÉ ======== */
-.rodape {
-  background-color: #2f2f2f;
-  color: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-/* ======== RESPONSIVIDADE ======== */
-@media (max-width: 768px) {
-  .menu {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .cards {
-    flex-direction: column;
-    align-items: center;
-  }
+form button:hover {
+    background-color: #555;
 }
